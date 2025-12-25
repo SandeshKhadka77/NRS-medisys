@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Register - NRS-mediSys</title>
+
+  <body>
+
+<!--Navbar -->
+<div class="navbar">
+  <div class="logo">NRS-<span>MediSys</span></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doctors.html">Doctors</a></li>
+      <li><a href="patients.html">Patients</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="notice.html">Notices</a></li>
+    </ul>
+  </nav>
+  <a href="login.html" class="btn">Login / Signup</a>
+</div>
+
+
+  <div class="container">
+    
+    <!-- Login Form -->
+    <div id="loginBox" class="form-box active">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label>Email or Phone</label>
+        <input type="text" placeholder="Enter your email or phone">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password">
+      </div>
+      <button>Login</button>
+      <div class="link-text">
+        <a href="#" onclick="showForm('forgotBox')">Forgot Password?</a><br>
+        Don't have an account? <a href="#" onclick="showForm('registerBox')">Register</a>
+      </div>
+    </div>
+
+    <!-- Register Form -->
+    <div id="registerBox" class="form-box">
+      <h2>Register</h2>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="Create a password">
+      </div>
+      <button>Register</button>
+      <div class="link-text">
+        Already have an account? <a href="#" onclick="showForm('loginBox')">Login</a>
+      </div>
+    </div>
+
+    <!-- Forgot Password -->
+    <div id="forgotBox" class="form-box">
+      <h2>Forgot Password</h2>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+      </div>
+      <button>Send Reset Link</button>
+      <div class="link-text">
+        Remembered your password? <a href="#" onclick="showForm('loginBox')">Back to Login</a>
+      </div>
+    </div>
+
+  </div>
+
+   <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+      /* nav bar*/
+     .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00c6a9;
+}
+
+.logo span {
+  color: #00c6a9;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+  color: #00c6a9;
+}
+
+.btn {
+  border: 1px solid #00c6a9;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #00c6a9;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #00c6a9;
+  color: #fff;
+}
+
+/* Responsive for nav fjds */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f9fb;
+      color: #333;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      margin: 80px auto;
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00c6a9;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #00c6a9;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #009884;
+    }
+
+    .link-text {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .link-text a {
+      color: #00c6a9;
+      text-decoration: none;
+    }
+
+    .form-box {
+      display: none;
+    }
+
+    .form-box.active {
+      display: block;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        margin: 40px 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<!--  JS forms -->
+  <script>
+    function showForm(formId) {
+      // Hide all forms
+      document.getElementById("loginBox").classList.remove("active");
+      document.getElementById("registerBox").classList.remove("active");
+      document.getElementById("forgotBox").classList.remove("active");
+
+      // Show selected form
+      document.getElementById(formId).classList.add("active");
+    }
+  </script>
+
+</body>
+</html>

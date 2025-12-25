@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospital Details | NRS-MediSys</title>
+</head>
+<body>
+
+  
+<!--Navbar -->
+<div class="navbar">
+  <div class="logo">NRS-<span>MediSys</span></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doctors.html">Doctors</a></li>
+      <li><a href="patients.html">Patients</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="notice.html">Notices</a></li>
+    </ul>
+  </nav>
+  <a href="login.html" class="btn">Login / Signup</a>
+</div>
+
+
+  <header>
+    <h1>NRS MediSys</h1>
+  </header>
+
+  <section class="hospital-details">
+    <h2>About Our Hospital</h2>
+
+    <div class="section">
+      <h3>History</h3>
+      <p>Founded in 2025, NRS MediSys -- It is college Project started with the vision of providing affordable, high-quality healthcare to everyone. We began as a small clinic and have now grown into a multi-specialty hospital.</p>
+    </div>
+
+    <div class="section">
+      <h3>Achievements</h3>
+      <ul>
+        <li>National Healthcare Excellence Award - 2025</li>
+        <li>More than 100 successful surgeries</li>
+        <li>ISO 9001 Certified Hospital</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Future Goals</h3>
+      <p>Our goal is to expand our telemedicine services to rural Nepal,<br> establish a new medical college, and launch advanced robotic surgery units by 2030.</p>
+    </div>
+
+    <div class="section">
+      <h3>Hospital Alumni</h3>
+      <p>We are proud of our alumni doctors who now serve in top hospitals globally. <br>Their achievements inspire our next generation of medical professionals.</p>
+    </div>
+  </section>
+
+  <section class="leaders">
+    <h2>Hospital Leadership</h2>
+
+    <div class="leader-grid">
+      <div class="leader-box">
+        <img src="Image/nirajan.jpg" alt="Nirajan Chaudhary">
+        <h4>Nirajan Chaudhary</h4>
+        <p>Managing Director</p>
+        <p>Email: nirajan@nrsmedisys.com.np</p>
+      </div>
+
+      <div class="leader-box">
+        <img src="Image/rup.jpg.jpeg" alt="Rup Simkhada">
+        <h4>Rup Simkhada</h4>
+        <p>CEO</p>
+        <p>Email: rup@nrsmedisys.com.np</p>
+      </div>
+
+      <div class="leader-box">
+        <img src="Image/sandesh.jpg.jpg" alt="Sandesh Jung Chettri">
+        <h4>Sandesh Jung Chettri</h4>
+        <p>Chairman</p>
+        <p>Email: sandesh@nrsmedisys.com.np</p>
+      </div>
+    </div>
+  </section>
+</body>
+  <footer>
+    <p>&copy; 2025 NRS MediSys. All rights reserved.</p>
+  </footer>
+
+  <!-- CSS  -->
+  <style>
+
+  .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00c6a9;
+}
+
+.logo span {
+  color: #00c6a9;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+  color: #00c6a9;
+}
+
+.btn {
+  border: 1px solid #00c6a9;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #00c6a9;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #00c6a9;
+  color: #fff;
+}
+
+/* Responsive for nav sfgdsfbgs*/
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f2f8fd;
+    }
+
+    header {
+      background-color: #14568a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #14568a;
+      margin-top: 30px;
+    }
+
+    .hospital-details {
+      padding: 20px 30px;
+    }
+
+    .section {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h3 {
+      color: #0d3e65;
+      margin-bottom: 10px;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .leaders {
+      padding: 30px;
+      background-color: #eaf4fc;
+    }
+
+    .leader-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .leader-box {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      width: 220px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .leader-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #14568a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 700px) {
+      .leader-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+</body>
+</html>
+
