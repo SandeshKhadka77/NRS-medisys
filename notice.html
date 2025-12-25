@@ -1,1 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notices | NRS-MediSys</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f9fc;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00b894;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .navbar ul li a.active,
+    .navbar ul li a:hover {
+      color: #00b894;
+    }
+
+    .btn {
+      padding: 8px 14px;
+      background: #00b894;
+      color: white;
+      border-radius: 6px;
+    }
+
+    /* Notice Section */
+    .notice-section {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .notice-section h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .notice-section p {
+      text-align: center;
+      color: #666;
+      margin-bottom: 50px;
+    }
+
+    .notice-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .notice-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .notice-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .notice-card h3 {
+      color: #00b894;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .notice-card span {
+      font-size: 13px;
+      color: #999;
+    }
+
+    .notice-card p {
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    /* Footer */
+    .footer {
+      background: #0b4f6c;
+      color: white;
+      padding: 50px 20px;
+      margin-top: 80px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .footer a {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #00e6c3;
+    }
+
+    .footer-socials a {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    .footer-policy {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">NRS-MediSys</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="patients.html">Patients</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="notice.html" class="active">Notices</a></li>
+        <li><a href="login.html" class="btn">Login / Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Notices -->
+  <section class="notice-section">
+    <h1>Health Notices & News</h1>
+    <p>Latest health activities, awareness programs, and medical updates from Nepal</p>
+
+    <div class="notice-grid">
+
+      <div class="notice-card">
+        <h3>Free Health Camp in Kathmandu</h3>
+        <span><i class="fas fa-calendar"></i> July 2025</span>
+        <p>
+          The Ministry of Health Nepal organized a free health camp in Kathmandu focusing on
+          blood pressure, diabetes screening, and general checkups. Over 2,000 citizens benefited
+          from this initiative.
+        </p>
+      </div>
+
+      <div class="notice-card">
+        <h3>Dengue Awareness Campaign</h3>
+        <span><i class="fas fa-calendar"></i> June 2025</span>
+        <p>
+          With rising dengue cases during monsoon, health authorities launched an awareness
+          campaign across major cities, educating people on mosquito control and early symptoms.
+        </p>
+      </div>
+
+      <div class="notice-card">
+        <h3>New Government Hospital Wing Opened</h3>
+        <span><i class="fas fa-calendar"></i> May 2025</span>
+        <p>
+          A new emergency and trauma care wing was inaugurated at Bir Hospital, improving
+          emergency services and reducing patient load in Kathmandu valley hospitals.
+        </p>
+      </div>
+
+      <div class="notice-card">
+        <h3>Mental Health Awareness Week</h3>
+        <span><i class="fas fa-calendar"></i> April 2025</span>
+        <p>
+          Nepal observed Mental Health Awareness Week with seminars, free counseling sessions,
+          and online webinars to reduce stigma and promote psychological well-being.
+        </p>
+      </div>
+
+      <div class="notice-card">
+        <h3>Vaccination Drive for Children</h3>
+        <span><i class="fas fa-calendar"></i> March 2025</span>
+        <p>
+          Nationwide vaccination programs were conducted to immunize children against measles,
+          rubella, and polio, especially in rural and remote areas.
+        </p>
+      </div>
+
+      <div class="notice-card">
+        <h3>Digital Health Records Initiative</h3>
+        <span><i class="fas fa-calendar"></i> February 2025</span>
+        <p>
+          The Government of Nepal announced a digital health record system to improve patient data
+          management and coordination among hospitals and clinics.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h2>NRS-mediSys</h2>
+        <p>Reliable Services, Our Motto.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3>For Patients</h3>
+        <p><a href="#">Search Doctors</a></p>
+        <p><a href="#">Booking</a></p>
+      </div>
+
+      <div>
+        <h3>For Doctors</h3>
+        <p><a href="#">Appointments</a></p>
+        <p><a href="#">Dashboard</a></p>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <p>Banasthali, Kathmandu</p>
+        <p>9765302657</p>
+        <p>nrs@medisys.com</p>
+      </div>
+    </div>
+
+    <div class="footer-policy">
+      <a href="#">Terms & Conditions</a> | <a href="#">Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    console.log("Notice page loaded successfully");
+  </script>
+
+</body>
+</html>
 
