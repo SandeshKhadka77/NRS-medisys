@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login/Register - NRS-mediSys</title>
-   <link rel="stylesheet" href="CSS/main.css" />
+
   <body>
 
 <!--Navbar -->
@@ -82,6 +82,171 @@
     </div>
 
   </div>
+
+   <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+      /* nav bar*/
+     .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00c6a9;
+}
+
+.logo span {
+  color: #00c6a9;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+  color: #00c6a9;
+}
+
+.btn {
+  border: 1px solid #00c6a9;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #00c6a9;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #00c6a9;
+  color: #fff;
+}
+
+/* Responsive for nav fjds */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f9fb;
+      color: #333;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      margin: 80px auto;
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00c6a9;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #00c6a9;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #009884;
+    }
+
+    .link-text {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .link-text a {
+      color: #00c6a9;
+      text-decoration: none;
+    }
+
+    .form-box {
+      display: none;
+    }
+
+    .form-box.active {
+      display: block;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        margin: 40px 20px;
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 
 <!--  JS forms -->

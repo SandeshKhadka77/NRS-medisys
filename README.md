@@ -18,8 +18,9 @@ This project is **frontend-only** and does not include backend or database funct
 
 - **HTML5** — Structure of the website  
 - **CSS3** — Styling, layout, and responsiveness  
+- **Tailwind CSS** - 
 - **JavaScript (Vanilla JS)** — Basic interactivity and UI behavior  
-
+- 
 ---
 
 ## 🎯 Learning Objectives
