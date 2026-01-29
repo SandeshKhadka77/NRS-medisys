@@ -87,7 +87,7 @@ body {
   cursor: pointer;
 }
 
-/*.specialties {
+.specialties {
   padding: 40px 10%;
   background: white;
   text-align: center;
@@ -109,7 +109,7 @@ body {
   font-weight: bold;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-*/
+
 /* Responsive */
 @media (max-width: 768px) {
   .navbar nav ul {
